@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: #fff;
+  background-image: url("https://images.unsplash.com/photo-1570224344094-125a17f832a3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+:root {
+  --main-color-1: #ff3300;
+}
+.inner-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #111;
+  border-top-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+}
+
+.box {
+  margin: 40px;
+}
+.box h2 {
+  text-align: center;
+}
+.input-box {
+  border: none;
+}
+.input-box input {
+  display: block;
+  margin: 10px auto;
+  background: none;
+  width: 70%;
+  border: 2px solid var(--main-color-1);
+  border-radius: 30px;
+  padding: 6px;
+  outline: none;
+  color: #fff;
+  transition: 0.25s;
+}
+.input-box input:focus {
+  border-left: 30px solid red;
+  width: calc(70% - 30px);
+}
+.btn-signin {
+  width: 30%;
+  margin: 30px auto;
+  display: block;
+  border: 2px solid var(--main-color-1);
+  background: none;
+  border-radius: 15px;
+  padding: 8px;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  transition: 0.25s;
+}
+.btn-signin:hover {
+  background: var(--main-color-1);
+}
+.inner-container span a {
+  text-decoration: none;
+  color: var(--main-color-1);
+}
